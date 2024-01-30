@@ -1,91 +1,32 @@
-# python-challenge
-PyBank Instructions
-In this Challenge, you are tasked with creating a Python script to analyze the financial records of your company. You will be given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
+Python-Challenge
+This challenge is divided into two parts: PyBank (part 1) and PyPoll (part 2). 
 
-Your task is to create a Python script that analyzes the records to calculate each of the following values:
+PyBank: Create a Python script that analyzes the financial records of a company
 
-The total number of months included in the dataset
+First, I imported the dataset named budget_data.csv, the dataset contained the columns Date and Profit/Losses.
 
-The net total amount of "Profit/Losses" over the entire period
+I calculated the total number of months in the dataset by setting monthcount to 0 and counting the number of rows after the header.
 
-The changes in "Profit/Losses" over the entire period, and then the average of those changes
+I calculated the net total amount of Profit/Losses over the entire period by setting total to 0 and adding the values in each row.
 
-The greatest increase in profits (date and amount) over the entire period
+I calculated the changes in Profit/Losses over the entire period by storing the month and difference in Profit/Losses between two consecutive rows in a list, and calculated the average of those changes by adding all values in the list and dividing it by the number of items in the list.
 
-The greatest decrease in profits (date and amount) over the entire period
+I calculated the greatest increase in profits by comparing all changes in profits between consecutive rows and stored the largest value in increase.
 
-PyPoll Instructions
-In this Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
+I calculated the greatest decrease in profits by comparing all changes in profits between consecutive rows and stored the smallest value in decrease.
 
-You will be given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Your task is to create a Python script that analyzes the votes and calculates each of the following values:
+Then, I created a text file with Python and stored the total number of months in the dataset, the total amount of "Profits/Losses" over time, the changes in "Profits/Losses" month to month during the entire period, the average change in "Profits/Losses", the greatest increase in profits, and the greatest decrease in profits.
 
-The total number of votes cast
+PyPoll: Create a Python script that analyzes election data
 
-A complete list of candidates who received votes
+First, I imported the dataset named election_data.csv, the dataset contained the columns Voter ID, County, and Candidate.
 
-The percentage of votes each candidate won
+I calculated the total number of votes cast by setting votecount to 0 and counting the number of rows after the header.
 
-The total number of votes each candidate won
+I created a list that stored the names of all the candidates that received votes.
 
-The winner of the election based on popular vote
+I obtained the total number of votes each candidate won by setting a counter for the votes cast for each candidate and stored the totals in a list.
 
-In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+I obtained the percentage of votes each candidate won by dividing the number of votes each candidate received by the total votecount and multiplied the result by 100, and stored the percentages in a list.
 
-
-Requirements
-Correctly Reads in the CSV (10 points)
-Reads in the CSVs for both PyBank and PyPoll using Python (5 points)
-
-Successfully stores the header row (5 points)
-
-Results Printed out to correctly to terminal (40 points)
-Results correctly display for PyBank:
-
-Total Months (5 points)
-
-Total (5 points)
-
-Average Change (5 points)
-
-Greatest Increase (5 points)
-
-Greatest Decrease (5 points)
-
-Results correctly display for PyPoll:
-
-Total Votes (5 points)
-
-Each candidate’s total votes and percent of votes (5 points)
-
-Winner (5 points)
-
-Code Runs Error Free (10 points)
-Error Free (5 points)
-
-Producing consistent results (5 points)
-
-Exports results to text file (30 points)
-The text file contains for PyBank:
-
-Total Months (2.5 points)
-
-Total (2.5 points)
-
-Average Change (5 points)
-
-Greatest Increase (5 points)
-
-Greatest Decrease (5 points)
-
-The text file contains for Pypoll:
-
-Total Votes (2.5 points)
-
-Each candidate’s total votes and percent of votes (2.5 points)
-
-Winner (5 points)
-
-Code is cleaned and commented (10 points)
-Has additional tests and debugging removed (5 points)
-
-Commented (5 points)
+Then, I created a text file with Python and stored the total number of votes cast, the list of candidates who received votes, the percentage of votes each candidate received, the number of votes each candidate received, and the winner of the election.
