@@ -1,7 +1,7 @@
-Python-Challenge
+# Python-Challenge
 This challenge is divided into two parts: PyBank (part 1) and PyPoll (part 2). 
 
-PyBank: Create a Python script that analyzes the financial records of a company
+## PyBank: Create a Python script that analyzes the financial records of a company
 
 First, I imported the dataset named budget_data.csv, the dataset contained the columns Date and Profit/Losses.
 
@@ -17,7 +17,7 @@ I calculated the greatest decrease in profits by comparing all changes in profit
 
 Then, I created a text file with Python and stored the total number of months in the dataset, the total amount of "Profits/Losses" over time, the changes in "Profits/Losses" month to month during the entire period, the average change in "Profits/Losses", the greatest increase in profits, and the greatest decrease in profits.
 
-PyPoll: Create a Python script that analyzes election data
+## PyPoll: Create a Python script that analyzes election data
 
 First, I imported the dataset named election_data.csv, the dataset contained the columns Voter ID, County, and Candidate.
 
